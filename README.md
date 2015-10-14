@@ -7,11 +7,9 @@ TechnicalException, BusinessException ainsi que tout autre WebApplicationExcepti
 Structure ErrorMessage :
 
 	public class ErrorMessage {
-
 		private int status;
 		private String link = "";
 		private List<String> messages;
-
 		...
 	}
 
