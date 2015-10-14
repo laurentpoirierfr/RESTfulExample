@@ -10,7 +10,7 @@ import javax.ws.rs.ext.Provider;
 public class TechnicalExceptionMapper implements ExceptionMapper<TechnicalException> {
 
 	// private static final ResourceBundle resource =
-	// ResourceBundle.getBundle("com.blogspot.avianey");
+	// ResourceBundle.getBundle("");
 
 	@Override
 	public Response toResponse(TechnicalException e) {

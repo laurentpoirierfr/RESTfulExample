@@ -43,4 +43,7 @@ public class ErrorMessage {
 		this.messages = messages;
 	}
 
+	public void addMessage(String message){
+		this.messages.add(message);
+	}
 }

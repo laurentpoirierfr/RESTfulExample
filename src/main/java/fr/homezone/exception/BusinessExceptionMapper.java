@@ -10,7 +10,7 @@ import javax.ws.rs.ext.Provider;
 public class BusinessExceptionMapper implements ExceptionMapper<BusinessException> {
 
 	// private static final ResourceBundle resource =
-	// ResourceBundle.getBundle("com.blogspot.avianey");
+	// ResourceBundle.getBundle("");
 
 	@Override
 	public Response toResponse(BusinessException e) {

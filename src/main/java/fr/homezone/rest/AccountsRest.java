@@ -26,8 +26,9 @@ public class AccountsRest {
 	@GET
 	@Path("{customer}/accounts")
 	@Produces({ MediaType.APPLICATION_JSON })
-	public List<Account> getAccounts(@PathParam("customer") String customer)
-			throws BusinessException, TechnicalException {
+	public List<Account> getAccounts(
+			@PathParam("customer") String customer)
+					throws BusinessException, TechnicalException {
 		return service.getAccounts(customer);
 	}
 
