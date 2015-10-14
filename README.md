@@ -2,7 +2,7 @@
 
 ### Gestion des exceptions : 
 
-Technical, Business ainsi que tout autre WebApplicationException.
+TechnicalException, BusinessException ainsi que tout autre WebApplicationException.
 
 Structure ErrorMessage :
 
