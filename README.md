@@ -16,5 +16,3 @@ Structure ErrorMessage :
 	}
 
 
-
-### Gestion Beans Validation
