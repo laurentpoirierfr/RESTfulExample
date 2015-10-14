@@ -19,8 +19,6 @@ public class WebApplicationExceptionMapper implements ExceptionMapper<WebApplica
 		
 		errorMessage.setStatus(e.getResponse().getStatus());
 		errorMessage.addMessage(e.getMessage());
-		errorMessage.addMessage(e.getLocalizedMessage());
-		
 		
 		return Response.status(errorMessage.getStatus()).entity(errorMessage).type(MediaType.APPLICATION_JSON)
 				.build();
