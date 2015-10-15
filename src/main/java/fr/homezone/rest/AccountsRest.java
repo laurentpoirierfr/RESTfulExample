@@ -2,10 +2,12 @@ package fr.homezone.rest;
 
 import java.util.List;
 
+import javax.validation.constraints.Digits;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import fr.homezone.exception.BusinessException;
@@ -26,9 +28,9 @@ public class AccountsRest {
 	@GET
 	@Path("{customer}/accounts")
 	@Produces({ MediaType.APPLICATION_JSON })
-	public List<Account> getAccounts(
-			@PathParam("customer") String customer)
-					throws BusinessException, TechnicalException {
+	public List<Account> getAccounts(@PathParam("customer") String customer,
+			@Digits(integer = 2, fraction = 0) @QueryParam("limit") int limit,
+			@QueryParam("offset") int offset) throws BusinessException, TechnicalException {
 		return service.getAccounts(customer);
 	}
 
