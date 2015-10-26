@@ -13,7 +13,8 @@ public class TechnicalException extends Exception {
 		return errorMessage;
 	}
 
-	public TechnicalException(String... mesgs) {
+	public TechnicalException(String link, String... mesgs) {
+		this.errorMessage.setLink(link);
 		this.errorMessage.setStatus(500);
 		for (String mesg : mesgs) {
 			this.errorMessage.getMessages().add(mesg);

@@ -11,7 +11,8 @@ public class BusinessException extends Exception {
 		return errorMessage;
 	}
 	
-	public BusinessException(String... mesgs) {
+	public BusinessException(String link, String... mesgs) {
+		this.errorMessage.setLink(link);
 		this.errorMessage.setStatus(400);
 		for (String mesg : mesgs) {
 			this.errorMessage.getMessages().add(mesg);

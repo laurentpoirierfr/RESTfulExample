@@ -14,3 +14,11 @@ Structure ErrorMessage :
 	}
 
 
+
+### Git configuration
+
+Pour éviter certaines déconvenues pour l'accès à GitHub.com:
+
+	git config --global url."https://".insteadOf git://
+	
+	

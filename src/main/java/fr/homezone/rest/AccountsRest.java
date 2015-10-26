@@ -19,6 +19,7 @@ import fr.homezone.service.impl.AccountsServiceImpl;
 @Path("/customers/")
 public class AccountsRest {
 
+	
 	private AccountsService service = new AccountsServiceImpl();
 
 	/*
