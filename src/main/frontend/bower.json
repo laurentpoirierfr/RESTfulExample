@@ -1,0 +1,25 @@
+{
+  "name": "RESTfulExample",
+  "description": "Application starter",
+  "main": "src/js/main.js",
+  "authors": [
+    "9elfeo <laurentpoirierfr@yahoo.fr>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/laurentpoirierfr/RESTfulExample",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}
