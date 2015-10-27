@@ -43,17 +43,24 @@
     "require-dir": "^0.3.0",
     "s3": "^4.4.0",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.3.0"
+    "watchify": "^3.3.0",
+    "webpack": "^1.12.2"
   },
   "dependencies": {
     "backbone": "1.2.1",
     "backbone.marionette": "^2.4.2",
     "backbone.radio": "^1.0.0",
+    "body-parser": "^1.14.1",
     "bower": "^1.6.5",
+    "express": "^4.13.3",
     "fastclick": "^1.0.6",
     "imagesloaded": "^3.1.8",
     "jquery": "^2.1.4",
     "lodash": "^3.10.0",
-    "velocity-animate": "^1.2.2"
+    "morgan": "^1.6.1",
+    "path": "^0.12.7",
+    "velocity-animate": "^1.2.2",
+    "webpack": "^1.12.2",
+    "yargs": "^3.29.0"
   }
 }
