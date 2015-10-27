@@ -34,7 +34,7 @@ var aliasify = require('aliasify').configure({
         'utils': './app/utils',
         'views': './app/views',
     },
-    configDir: config.src + '/javascript'
+    configDir: config.src + '/js'
 });
 
 var browserifyTask = function (callback, devMode) {

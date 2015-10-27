@@ -7,22 +7,21 @@ var settings_json;
 try {
     settings_json = require('../settings');
 } catch (e) {
-    console.log('settings.json file not found, some tasks may not work without this.');
+    console
+            .log('settings.json file not found, some tasks may not work without this.');
     console.log(e);
 }
 
-var settings = require('./util/settingsParser')(settings_json || {}, {dest: dest});
+var settings = require('./util/settingsParser')(settings_json || {}, {
+    dest: dest
+});
 
 module.exports = {
     browserSync: {
         server: {
             // Serve up our build folder
             baseDir: dest,
-            middleware: [
-                modRewrite([
-                    '^[^\\.]*$ /index.html [L]'
-                ])
-            ]
+            middleware: [modRewrite(['^[^\\.]*$ /index.html [L]'])]
         }
     },
     sass: {
@@ -52,14 +51,14 @@ module.exports = {
         // bundle config in the list below
         src: src,
         bundleConfigs: [{
-            entries: src + '/javascript/main.js',
-            dest: dest + '/js',
-            outputName: 'main.js',
-            // Additional file extentions to make optional
-            extensions: ['.coffee', '.js', '.hbs'],
-            // list of modules to make require-able externally
-            //require: ['some-module', 'another-module']
-        }]
+                entries: src + '/js/main.js',
+                dest: dest + '/js',
+                outputName: 'main.js',
+                // Additional file extentions to make optional
+                extensions: ['.coffee', '.js', '.hbs'],
+                // list of modules to make require-able externally
+                // require: ['some-module', 'another-module']
+            }]
     },
     production: {
         cssSrc: dest + '/css/*.css',
